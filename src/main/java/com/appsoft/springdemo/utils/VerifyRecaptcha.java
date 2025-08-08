@@ -16,7 +16,7 @@ public class VerifyRecaptcha {
 
 	public static final String url = "https://www.google.com/recaptcha/api/siteverify";
 	//change here
-	public static final String secret = "6LcS3JErAAAAAKHjnUX4qesyHRVX6m3Shr43diaD";
+	public static final String secret = "6LfOtp4rAAAAAOxEuTq7PMC7CIiIvh5nKyfwYZt2";
 	private final static String USER_AGENT = "Mozilla/5.0";
 
 	public static boolean verify(String gRecaptchaResponse) throws IOException {
