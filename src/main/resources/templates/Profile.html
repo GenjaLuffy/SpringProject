@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<th:block th:insert="Header.html"></th:block>
+
+	<div class="container-fluid">
+		<div class="card">
+			<div class="card-header bg-primary text-white text-center">
+				<h4 >User Profile Detail</h4>
+			</div>
+			<div class="card-body">
+				<div class="row p-2">
+					<div class="col-4">First Name</div>
+					<div class="col-6">
+						[[${session.activeuser.fname}]]
+					</div>
+				</div>
+				<div class="row p-2">
+					<div class="col-4">Last Name</div>
+					<div class="col-6">
+						[[${session.activeuser.lname}]]
+					</div>
+				</div>
+				<div class="row p-2">
+					<div class="col-4">UserName</div>
+					<div class="col-6">
+						[[${session.activeuser.username}]]
+					</div>
+				</div>
+			</div>
+			<div class="card-footer bg-warning text-center">
+				copyright@2025
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>

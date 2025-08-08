@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Contact</title>
+</head>
+<body>
+	
+	<th:block th:insert="Header.html"></th:block>
+
+	<div class="container-fluid">
+		<div class="card">
+			<div class="card-header bg-primary text-white text-center">
+				<h4 >Contact Details</h4>
+			</div>
+			<div class="card-body">
+			<form action="/contact" method="POST">
+				<div class="row p-2">
+					<div class="col-4">ToEmail</div>
+					<div class="col-6">
+						<input type="text" name="toEmail" class="form-control">
+					</div>
+				</div>
+				<div class="row p-2">
+					<div class="col-4">Subject</div>
+					<div class="col-6">
+						<input type="text" name="subject" class="form-control">
+					</div>
+				</div>
+				<div class="row p-2">
+					<div class="col-4">Message</div>
+					<div class="col-6">
+						<textarea  name="message" column="10" class="form-control"></textarea>
+					</div>
+				</div>
+				
+				<div class="row p-2">
+					<div class="col-4"></div>
+					<div class="col-6">
+						<input type="submit" value="Send" class="btn btn-success">
+					</div>
+				</div>
+			</form>
+			</div>
+			<div class="card-footer bg-warning text-center">
+				copyright@2025
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>
